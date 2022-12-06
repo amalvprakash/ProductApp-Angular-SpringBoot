@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl 12">
+
+            <div class="row g-3">
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Manufacturing Date</th>
+                        <th scope="col">Expiry Date</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Seller Name</th>
+                        <th scope="col">Distributor Name</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of products">
+                        <td>{{i.productCode}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.manDate}}</td>
+                        <td>{{i.expDate}}</td>
+                        <td>{{i.brand}}</td>
+                        <td>{{i.Price}}</td>
+                        <td>{{i.sellerName}}</td>
+                        <td>{{i.distributorName}}</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+        </div>
+    </div> 
+
